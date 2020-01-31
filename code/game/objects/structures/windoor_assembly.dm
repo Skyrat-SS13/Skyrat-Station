@@ -202,21 +202,23 @@
 
 			//Adding airlock electronics for access. Step 6 complete.
 			else if(istype(W, /obj/item/electronics/airlock))
-				if(!user.transferItemToLoc(W, src))
-					return
+				if(iscarbon(user))
+					if(!user.transferItemToLoc(W, src))
+						return
 				W.play_tool_sound(src, 100)
 				user.visible_message("[user] installs the electronics into the airlock assembly.",
 					"<span class='notice'>You start to install electronics into the airlock assembly...</span>")
 
 				if(do_after(user, 40, target = src))
-					if(!src || electronics)
-						W.forceMove(drop_location())
-						return
+					if(iscarbon(user))
+						if(!src || electronics)
+							W.forceMove(drop_location())
 					to_chat(user, "<span class='notice'>You install the airlock electronics.</span>")
 					name = "near finished windoor assembly"
 					electronics = W
 				else
-					W.forceMove(drop_location())
+					if(iscarbon(user))
+						W.forceMove(drop_location())
 
 			//Screwdriver to remove airlock electronics. Step 6 undone.
 			else if(istype(W, /obj/item/screwdriver))
@@ -231,8 +233,9 @@
 					name = "wired windoor assembly"
 					var/obj/item/electronics/airlock/ae
 					ae = electronics
-					electronics = null
-					ae.forceMove(drop_location())
+					if(iscarbon(user))
+						electronics = null
+						ae.forceMove(drop_location())
 
 			else if(istype(W, /obj/item/pen))
 				var/t = stripped_input(user, "Enter the name for the door.", name, created_name,MAX_NAME_LEN)
@@ -269,19 +272,17 @@
 							windoor.base_state = "rightsecure"
 						windoor.setDir(dir)
 						windoor.density = FALSE
-
+	
 						if(electronics.one_access)
 							windoor.req_one_access = electronics.accesses
 						else
 							windoor.req_access = electronics.accesses
-						windoor.electronics = electronics
-						electronics.forceMove(windoor)
+						if(iscarbon(user))
+							windoor.electronics = electronics
+							electronics.forceMove(windoor)
 						if(created_name)
 							windoor.name = created_name
 						qdel(src)
-						windoor.close()
-
-
 					else
 						var/obj/machinery/door/window/windoor = new /obj/machinery/door/window(loc)
 						if(facing == "l")
@@ -302,7 +303,6 @@
 						if(created_name)
 							windoor.name = created_name
 						qdel(src)
-						windoor.close()
 
 
 			else
