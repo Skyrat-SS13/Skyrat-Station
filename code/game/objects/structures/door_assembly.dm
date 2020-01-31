@@ -153,14 +153,19 @@
 		if(do_after(user, 40, target = src))
 			if( state != AIRLOCK_ASSEMBLY_NEEDS_ELECTRONICS )
 				return
-			if(!user.transferItemToLoc(W, src))
-				return
+			if(iscarbon(user))
+				if(!user.transferItemToLoc(W, src))
+					return
 
-			to_chat(user, "<span class='notice'>You install the airlock electronics.</span>")
-			state = AIRLOCK_ASSEMBLY_NEEDS_SCREWDRIVER
-			name = "near finished airlock assembly"
-			electronics = W
-
+				to_chat(user, "<span class='notice'>You install the airlock electronics.</span>")
+				state = AIRLOCK_ASSEMBLY_NEEDS_SCREWDRIVER
+				name = "near finished airlock assembly"
+				electronics = W
+			if(issilicon(user))
+				to_chat(user, "<span class='notice'>You install the airlock electronics.</span>")
+				state = AIRLOCK_ASSEMBLY_NEEDS_SCREWDRIVER
+				name = "near finished airlock assembly"
+				electronics = W
 
 	else if(istype(W, /obj/item/crowbar) && state == AIRLOCK_ASSEMBLY_NEEDS_SCREWDRIVER )
 		user.visible_message("[user] removes the electronics from the airlock assembly.", \
@@ -177,8 +182,9 @@
 				ae = new/obj/item/electronics/airlock( loc )
 			else
 				ae = electronics
-				electronics = null
-				ae.forceMove(src.loc)
+				if(iscarbon(user))
+					electronics = null
+					ae.forceMove(src.loc)
 
 	else if(istype(W, /obj/item/stack/sheet) && (!glass || !mineral))
 		var/obj/item/stack/sheet/G = W
@@ -252,7 +258,8 @@
 				else
 					door.name = base_name
 				door.previous_airlock = previous_assembly
-				electronics.forceMove(door)
+				if(iscarbon(user))
+					electronics.forceMove(door)
 				door.update_icon()
 				qdel(src)
 	else
@@ -290,7 +297,6 @@
 		target.previous_assembly = source.type
 	if(electronics)
 		target.electronics = source.electronics
-		source.electronics.forceMove(target)
 	target.update_icon()
 	target.update_name()
 	qdel(source)
