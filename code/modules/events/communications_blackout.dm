@@ -1,7 +1,7 @@
 /datum/round_event_control/communications_blackout
 	name = "Communications Blackout"
 	typepath = /datum/round_event/communications_blackout
-	weight = 30
+	weight = 5
 	gamemode_blacklist = list("dynamic")
 
 /datum/round_event/communications_blackout

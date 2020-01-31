@@ -1,3 +1,17 @@
+/obj/item/clothing/under/inconspicuousharness
+	name = "inconspicuous harness"
+	desc = "It's ALMOST like wearing nothing at all! Discretionary Warning: Exposing any sexual genitalia in public is illegal!"
+	icon_state = "inconspicuousharness"
+	item_state = "inconspicuousharness"
+	body_parts_covered = 0
+
+/obj/item/clothing/under/inconspicuousplusharness
+	name = "inconspicuous plus harness"
+	desc = "It's like wearing nothing at all! Discretionary Warning: Exposing any sexual genitalia in public is illegal!"
+	icon_state = "inconspicuousplusharness"
+	item_state = "inconspicuousplusharness"
+	body_parts_covered = 0
+
 /obj/item/clothing/under/pj/red
 	name = "red pj's"
 	desc = "Sleepwear."

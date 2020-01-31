@@ -14,7 +14,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	//doohickeys for savefiles
 	var/path
 	var/default_slot = 1				//Holder so it doesn't default to slot 1, rather the last one used
-	var/max_save_slots = 16
+	var/max_save_slots = 30
 
 	//non-preference stuff
 	var/muted = 0
@@ -199,7 +199,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/auto_fit_viewport = TRUE
 
 	var/uplink_spawn_loc = UPLINK_PDA
-	
+
 	var/sprint_spacebar = FALSE
 	var/sprint_toggle = FALSE
 
@@ -225,7 +225,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			load_path(C.ckey)
 			unlock_content = C.IsByondMember()
 			if(unlock_content)
-				max_save_slots = 24
+				max_save_slots = 30
 	var/loaded_preferences_successfully = load_preferences()
 	if(loaded_preferences_successfully)
 		if(load_character())
@@ -2230,7 +2230,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 				if("never_hypno")
 					cit_toggles ^= NEVER_HYPNO
-				
+
 				if("aphro")
 					cit_toggles ^= NO_APHRO
 
@@ -2239,7 +2239,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 				if("bimbo")
 					cit_toggles ^= BIMBOFICATION
-					
+
 				//END CITADEL EDIT
 
 				if("ambientocclusion")

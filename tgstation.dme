@@ -3162,6 +3162,8 @@
 #include "modular_citadel\code\modules\mentor\mentorpm.dm"
 #include "modular_citadel\code\modules\mentor\mentorsay.dm"
 #include "modular_citadel\code\modules\mob\cit_emotes.dm"
+#include "modular_citadel\code\modules\mob\say.dm"
+#include "modular_citadel\code\modules\mob\typing_indicator.dm"
 #include "modular_citadel\code\modules\mob\living\damage_procs.dm"
 #include "modular_citadel\code\modules\mob\living\living.dm"
 #include "modular_citadel\code\modules\mob\living\carbon\carbon.dm"

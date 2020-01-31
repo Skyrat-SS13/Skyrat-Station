@@ -273,16 +273,18 @@ GLOBAL_LIST(topic_status_cache)
 		if(CONFIG_GET(flag/allow_vote_mode))
 			features += "vote"
 		if(CONFIG_GET(flag/allow_ai))
-			features += "AI allowed"*/
-		hostedby = CONFIG_GET(string/hostedby)
+			features += "AI allowed"
+		hostedby = CONFIG_GET(string/hostedby)*/
 
-	s += "<b>[station_name()]</b>";
 	s += " ("
-	s += "<a href=\"https://citadel-station.net/home/\">" //Change this to wherever you want the hub to link to. CIT CHANGE - links to cit's website on the hub
-	s += "Citadel"  //Replace this with something else. Or ever better, delete it and uncomment the game version. CIT CHANGE - modifies the hub entry link
-	s += "</a>"
+	s += "<a href=\"https://discord.gg/hGpZ4Z3\">" //Change this to wherever you want the hub to link to. wzds change - links to the discord
+	s += "Discord"  //Replace this with something else. Or ever better, delete it and uncomment the game version. wzds change - modifies hub entry link
+	// s += "</a>|<a href=\"https://shadow-station.com\">"
+	// s += "Website"
+	// s += "</a>"
 	s += ")\]" //CIT CHANGE - encloses the server title in brackets to make the hub entry fancier
 	s += "<br>[CONFIG_GET(string/servertagline)]<br>" //CIT CHANGE - adds a tagline!
+
 
 	var/n = 0
 	for (var/mob/M in GLOB.player_list)

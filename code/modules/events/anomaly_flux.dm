@@ -3,8 +3,8 @@
 	typepath = /datum/round_event/anomaly/anomaly_flux
 
 	min_players = 10
-	max_occurrences = 5
-	weight = 20
+	max_occurrences = 2
+	weight = 10
 	gamemode_blacklist = list("dynamic")
 
 /datum/round_event/anomaly/anomaly_flux
