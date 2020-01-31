@@ -11,7 +11,7 @@
 			Knockdown(80)
 
 /mob/living/carbon/human/movement_delay()
-	. = 35
+	. = 0
 	if(!resting && m_intent == MOVE_INTENT_RUN && sprinting)
 		var/static/datum/config_entry/number/movedelay/sprint_speed_increase/SSI
 		if(!SSI)
