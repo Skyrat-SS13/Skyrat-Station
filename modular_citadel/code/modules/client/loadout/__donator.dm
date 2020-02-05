@@ -1,5 +1,5 @@
 //This is the file that handles donator loadout items.
-
+/* moved to modular_skyrat
 /datum/gear/pingcoderfailsafe
 	name = "IF YOU SEE THIS, PING A CODER RIGHT NOW!"
 	category = SLOT_IN_BACKPACK
@@ -101,7 +101,7 @@
 	category = SLOT_NECK
 	path = /obj/item/clothing/neck/cloak/festive
 	ckeywhitelist = list("illotafv")
-
+*/
 /datum/gear/carrotplush
 	name = "Carrot plushie"
 	category = SLOT_IN_BACKPACK
@@ -113,7 +113,7 @@
 	category = SLOT_NECK
 	path = /obj/item/clothing/neck/cloak/carrot
 	ckeywhitelist = list("improvedname")
-
+/* moved to modular_skyrat
 /datum/gear/albortorosamask
 	name = "Alborto Rosa mask"
 	category = SLOT_WEAR_MASK
@@ -131,13 +131,13 @@
 	category = SLOT_SHOES
 	path = /obj/item/clothing/shoes/sneakers/pink
 	ckeywhitelist = list("zigfie")
-
+*/
 /datum/gear/reecesgreatcoat
 	name = "Reece's Great Coat"
 	category = SLOT_WEAR_SUIT
 	path = /obj/item/clothing/suit/trenchcoat/green
 	ckeywhitelist = list("geemiesif")
-
+/* moved to modular_skyrat
 /datum/gear/russianflask
 	name = "Russian flask"
 	category = SLOT_IN_BACKPACK
@@ -150,13 +150,13 @@
 	category = SLOT_WEAR_MASK
 	path = /obj/item/clothing/mask/gas/stalker
 	ckeywhitelist = list("slomka")
-
+*/
 /datum/gear/stripedcollar
 	name = "Striped collar"
 	category = SLOT_NECK
 	path = /obj/item/clothing/neck/petcollar/stripe
 	ckeywhitelist = list("jademanique")
-
+/* moved to modular_skyrat
 /datum/gear/performersoutfit
 	name = "Bluish performer's outfit"
 	category = SLOT_W_UNIFORM
@@ -174,13 +174,13 @@
 	category = SLOT_IN_BACKPACK
 	path = /obj/item/gun/ballistic/automatic/AM4B
 	ckeywhitelist = list("zeronetalpha")
-
+*/
 /datum/gear/carrotsatchel
 	name = "Carrot Satchel"
 	category = SLOT_HANDS
 	path = /obj/item/storage/backpack/satchel/carrot
 	ckeywhitelist = list("improvedname")
-
+/* moved to modular_skyrat
 /datum/gear/naomisweater
 	name = "worn black sweater"
 	category = SLOT_W_UNIFORM
@@ -488,3 +488,4 @@ datum/gear/darksabresheath
 	category = SLOT_SHOES
 	path = /obj/item/clothing/shoes/sneakers/mikuleggings
 	ckeywhitelist = list("grandvegeta")
+*/
