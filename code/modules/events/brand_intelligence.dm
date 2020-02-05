@@ -19,14 +19,7 @@
 									 "Your money can buy happiness!", \
 									 "Engage direct marketing!", \
 									 "Advertising is legalized lying! But don't let that put you off our great deals!", \
-									 "You don't want to buy anything? Yeah, well, I didn't want to buy your mom either.",
-									 "Gamers, rise up!",
-									 "Ok, now, this is epic.",
-									 "HUMAN FUNNY.",
-									 "But I'm already tracer!",
-									 "How do I vore people?",
-									 "ERP?",
-									 "Not epic bros...")
+									 "You don't want to buy anything? Yeah, well, I didn't want to buy your mom either.")
 
 
 /datum/round_event/brand_intelligence/announce(fake)
@@ -72,9 +65,9 @@
 				M.faction = list("profit")
 				M.speak = rampant_speeches.Copy()
 				M.speak_chance = 7
-			else
-				explosion(upriser.loc, -1, 1, 2, 4, 0)
-				qdel(upriser)
+			//else
+			//	explosion(upriser.loc, -1, 1, 2, 4, 0)
+			//	qdel(upriser)
 
 		kill()
 		return
