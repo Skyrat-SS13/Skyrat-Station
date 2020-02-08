@@ -5,7 +5,7 @@
 	typepath = /datum/round_event/ghost_role/revenant
 	weight = 7
 	gamemode_blacklist = list("dynamic")
-	max_occurrences = 1
+	max_occurrences = 0
 	min_players = 5
 
 
