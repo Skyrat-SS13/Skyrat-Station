@@ -95,7 +95,7 @@
 	name = "Newspaper"
 	category = SLOT_IN_BACKPACK
 	path = /obj/item/newspaper
-  
+
 /datum/gear/paperbin
 	name = "Paper Bin"
 	category = SLOT_IN_BACKPACK
@@ -128,4 +128,26 @@
 	category = SLOT_IN_BACKPACK
 	path = /obj/item/modular_computer/laptop/preset/civilian
 	cost = 7
-	
+
+/datum/gear/plushdem
+	name = "Bubblegum Plush"
+	category = SLOT_IN_BACKPACK
+	path = /obj/item/toy/plush/bubbleplush
+	cost = 3
+	restricted_roles = list("Shaft Miner", "Quartermaster")
+
+/datum/gear/plushnuke
+	name = "Nuclear Op Plush"
+	category = SLOT_IN_BACKPACK
+	path = /obj/item/toy/plush/nukeplushie
+	cost = 3
+
+/datum/gear/plushscan
+	name = "Scanner Plush"
+	category = SLOT_IN_BACKPACK
+	path = /obj/item/toy/plush/dr_scanny
+	cost = 3
+	restricted_roles = list("Medical Doctor", "Chief Medical Officer", "Geneticist", "Chemist", "Virologist")
+
+
+

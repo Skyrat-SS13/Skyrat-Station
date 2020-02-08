@@ -229,3 +229,9 @@
 	name = "Red and Green Christmas Coat"
 	category = SLOT_WEAR_SUIT
 	path = /obj/item/clothing/suit/hooded/wintercoat/christmascoatrg
+
+/datum/gear/greengreatcoat
+	name = "Green Great Coat"
+	category = SLOT_WEAR_SUIT
+	path = /obj/item/clothing/suit/trenchcoat/green
+	cost = 3
