@@ -1,21 +1,158 @@
 /datum/sprite_accessory/snouts
 	icon = 'icons/mob/mutant_bodyparts.dmi'
 
-/datum/sprite_accessory/snouts/sharp
+/******************************************
+************** Snouts **************
+*******************************************/
+
+/datum/sprite_accessory/mam_snouts
+	color_src = MATRIXED
+	icon = 'modular_citadel/icons/mob/mam_snouts.dmi'
+
+/datum/sprite_accessory/mam_snouts/bird
+	name = "Beak"
+	icon_state = "bird"
+
+/datum/sprite_accessory/mam_snouts/bigbeak
+	name = "Big Beak"
+	icon_state = "bigbeak"
+
+/datum/sprite_accessory/mam_snouts/bug
+	name = "Bug"
+	icon_state = "bug"
+	color_src = MUTCOLORS
+	extra2 = TRUE
+	extra2_color_src = MUTCOLORS3
+
+/datum/sprite_accessory/mam_snouts/elephant
+	name = "Elephant"
+	icon_state = "elephant"
+	extra = TRUE
+	extra_color_src = MUTCOLORS3
+
+/datum/sprite_accessory/mam_snouts/fox
+	name = "Fox"
+	icon_state = "fox"
+
+/datum/sprite_accessory/mam_snouts/hshark
+	name = "hShark"
+	icon_state = "hshark"
+
+/datum/sprite_accessory/mam_snouts/hjackal
+	name = "Jackal"
+	icon_state = "hjackal"
+
+/datum/sprite_accessory/mam_snouts/hspots
+	name = "Hyena"
+	icon_state = "hspots"
+
+/datum/sprite_accessory/mam_snouts/hhorse
+	name = "Horse"
+	icon_state = "hhorse"
+
+/datum/sprite_accessory/mam_snouts/hzebra
+	name = "Zebra"
+	icon_state = "hzebra"
+
+/datum/sprite_accessory/mam_snouts/hanubus
+	name = "Anubus"
+	icon_state = "hanubus"
+
+/datum/sprite_accessory/mam_snouts/hpanda
+	name = "Panda"
+	icon_state = "hpanda"
+
+/datum/sprite_accessory/mam_snouts/skulldog
+	name = "Skulldog"
+	icon_state = "skulldog"
+	extra = TRUE
+	extra_color_src = MATRIXED
+
+/datum/sprite_accessory/mam_snouts/lcanid
+	name = "Mammal, Long"
+	icon_state = "lcanid"
+
+/datum/sprite_accessory/mam_snouts/lcanidalt
+	name = "Mammal, Long ALT"
+	icon_state = "lcanidalt"
+
+/datum/sprite_accessory/mam_snouts/scanid
+	name = "Mammal, Short"
+	icon_state = "scanid"
+
+/datum/sprite_accessory/mam_snouts/scanidalt
+	name = "Mammal, Short ALT"
+	icon_state = "scanidalt"
+
+/datum/sprite_accessory/mam_snouts/wolf
+	name = "Mammal, Thick"
+	icon_state = "wolf"
+
+/datum/sprite_accessory/mam_snouts/wolfalt
+	name = "Mammal, Thick ALT"
+	icon_state = "wolfalt"
+
+/datum/sprite_accessory/mam_snouts/redpanda
+	name = "WahCoon"
+	icon_state = "wah"
+
+/datum/sprite_accessory/mam_snouts/redpandaalt
+	name = "WahCoon ALT"
+	icon_state = "wahalt"
+
+/datum/sprite_accessory/mam_snouts/rhino
+	name = "Horn"
+	icon_state = "rhino"
+	extra = TRUE
+	extra = MUTCOLORS3
+
+/datum/sprite_accessory/mam_snouts/rodent
+	name = "Rodent"
+	icon_state = "rodent"
+
+/datum/sprite_accessory/mam_snouts/husky
+	name = "Husky"
+	icon_state = "husky"
+
+/datum/sprite_accessory/mam_snouts/otie
+	name = "Otie"
+	icon_state = "otie"
+
+/datum/sprite_accessory/mam_snouts/pede
+	name = "Scolipede"
+	icon_state = "pede"
+
+/datum/sprite_accessory/mam_snouts/sergal
+	name = "Sergal"
+	icon_state = "sergal"
+
+/datum/sprite_accessory/mam_snouts/shark
+	name = "Shark"
+	icon_state = "shark"
+
+/datum/sprite_accessory/mam_snouts/toucan
+	name = "Toucan"
+	icon_state = "toucan"
+
+/datum/sprite_accessory/mam_snouts/sharp
 	name = "Sharp"
 	icon_state = "sharp"
+	color_src = MUTCOLORS
 
-/datum/sprite_accessory/snouts/round
+/datum/sprite_accessory/mam_snouts/round
 	name = "Round"
 	icon_state = "round"
+	color_src = MUTCOLORS
 
-/datum/sprite_accessory/snouts/sharplight
+/datum/sprite_accessory/mam_snouts/sharplight
 	name = "Sharp + Light"
 	icon_state = "sharplight"
+	color_src = MUTCOLORS
 
-/datum/sprite_accessory/snouts/roundlight
+/datum/sprite_accessory/mam_snouts/roundlight
 	name = "Round + Light"
 	icon_state = "roundlight"
+	color_src = MUTCOLORS
 
 /datum/sprite_accessory/snout/guilmon
 	name = "Guilmon"
@@ -144,134 +281,6 @@
 	color_src = MATRIXED
 */
 
-/******************************************
-************** Mammal Snouts **************
-*******************************************/
-
-/datum/sprite_accessory/mam_snouts
-	color_src = MATRIXED
-	icon = 'modular_citadel/icons/mob/mam_snouts.dmi'
-
-/datum/sprite_accessory/mam_snouts/none
-	name = "None"
-	icon_state = "none"
-
-
-/datum/sprite_accessory/mam_snouts/bird
-	name = "Beak"
-	icon_state = "bird"
-
-/datum/sprite_accessory/mam_snouts/bigbeak
-	name = "Big Beak"
-	icon_state = "bigbeak"
-
-/datum/sprite_accessory/mam_snouts/bug
-	name = "Bug"
-	icon_state = "bug"
-	color_src = MUTCOLORS
-	extra2 = TRUE
-	extra2_color_src = MUTCOLORS3
-
-/datum/sprite_accessory/mam_snouts/elephant
-	name = "Elephant"
-	icon_state = "elephant"
-	extra = TRUE
-	extra_color_src = MUTCOLORS3
-
-/datum/sprite_accessory/mam_snouts/lcanid
-	name = "Mammal, Long"
-	icon_state = "lcanid"
-
-/datum/sprite_accessory/mam_snouts/lcanidalt
-	name = "Mammal, Long ALT"
-	icon_state = "lcanidalt"
-
-/datum/sprite_accessory/mam_snouts/scanid
-	name = "Mammal, Short"
-	icon_state = "scanid"
-
-/datum/sprite_accessory/mam_snouts/scanidalt
-	name = "Mammal, Short ALT"
-	icon_state = "scanidalt"
-
-/datum/sprite_accessory/mam_snouts/scanidalt2
-	name = "Mammal, Short ALT 2"
-	icon_state = "scanidalt2"
-
-/datum/sprite_accessory/mam_snouts/wolf
-	name = "Mammal, Thick"
-	icon_state = "wolf"
-
-/datum/sprite_accessory/mam_snouts/wolfalt
-	name = "Mammal, Thick ALT"
-	icon_state = "wolfalt"
-
-/datum/sprite_accessory/mam_snouts/redpanda
-	name = "WahCoon"
-	icon_state = "wah"
-
-/datum/sprite_accessory/mam_snouts/redpandaalt
-	name = "WahCoon ALT"
-	icon_state = "wahalt"
-
-/datum/sprite_accessory/mam_snouts/rhino
-	name = "Horn"
-	icon_state = "rhino"
-	extra = TRUE
-	extra = MUTCOLORS3
-
-/datum/sprite_accessory/mam_snouts/rodent
-	name = "Rodent"
-	icon_state = "rodent"
-
-/datum/sprite_accessory/mam_snouts/husky
-	name = "Husky"
-	icon_state = "husky"
-
-/datum/sprite_accessory/mam_snouts/otie
-	name = "Otie"
-	icon_state = "otie"
-
-/datum/sprite_accessory/mam_snouts/pede
-	name = "Scolipede"
-	icon_state = "pede"
-
-/datum/sprite_accessory/mam_snouts/sergal
-	name = "Sergal"
-	icon_state = "sergal"
-
-/datum/sprite_accessory/mam_snouts/shark
-	name = "Shark"
-	icon_state = "shark"
-
-/datum/sprite_accessory/mam_snouts/hshark
-	name = "hShark"
-	icon_state = "hshark"
-
-/datum/sprite_accessory/mam_snouts/toucan
-	name = "Toucan"
-	icon_state = "toucan"
-
-/datum/sprite_accessory/mam_snouts/sharp
-	name = "Sharp"
-	icon_state = "sharp"
-	color_src = MUTCOLORS
-
-/datum/sprite_accessory/mam_snouts/round
-	name = "Round"
-	icon_state = "round"
-	color_src = MUTCOLORS
-
-/datum/sprite_accessory/mam_snouts/sharplight
-	name = "Sharp + Light"
-	icon_state = "sharplight"
-	color_src = MUTCOLORS
-
-/datum/sprite_accessory/mam_snouts/roundlight
-	name = "Round + Light"
-	icon_state = "roundlight"
-	color_src = MUTCOLORS
-
 
 /******************************************
 **************** Snouts *******************
@@ -313,10 +322,6 @@
 /datum/sprite_accessory/mam_snouts/fscanidalt
 	name = "Mammal, Short ALT (Top)"
 	icon_state = "fscanidalt"
-
-/datum/sprite_accessory/mam_snouts/fscanidalt2
-	name = "Mammal, Short ALT 2 (Top)"
-	icon_state = "fscanidalt2"
 
 /datum/sprite_accessory/mam_snouts/fwolf
 	name = "Mammal, Thick (Top)"
