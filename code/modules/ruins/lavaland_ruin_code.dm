@@ -127,7 +127,7 @@
 	name = "Off-station Syndicate Agent"
 	r_hand = /obj/item/gun/ballistic/automatic/sniper_rifle
 	uniform = /obj/item/clothing/under/syndicate
-	suit = /obj/item/clothing/suit/toggle/labcoat
+	suit = /obj/item/clothing/suit/toggle/labcoat/labredblack
 	shoes = /obj/item/clothing/shoes/combat
 	gloves = /obj/item/clothing/gloves/combat
 	ears = /obj/item/radio/headset/syndicate/alt
