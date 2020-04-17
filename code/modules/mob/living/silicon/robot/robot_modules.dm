@@ -303,7 +303,7 @@
 		/obj/item/clockwork/replica_fabricator/cyborg)
 	moduleselect_icon = "standard"
 	hat_offset = -3
-
+/* moved to modular_skyrat
 /obj/item/robot_module/medical
 	name = "Medical"
 	basic_modules = list(
@@ -336,7 +336,7 @@
 	cyborg_base_icon = "medical"
 	moduleselect_icon = "medical"
 	hat_offset = 3
-
+*/
 /obj/item/robot_module/medical/be_transformed_to(obj/item/robot_module/old_module)
 	var/mob/living/silicon/robot/R = loc
 	var/medmodels = list("Default", "Heavy", "Sleek", "Marina", "Droid", "Eyebot", "Medihound", "Medihound Dark", "Vale")
@@ -394,7 +394,7 @@
 			moduleselect_alternate_icon = 'modular_citadel/icons/ui/screen_cyborg.dmi'
 			dogborg = TRUE
 	return ..()
-
+/* moved to modular_skyrat
 /obj/item/robot_module/engineering
 	name = "Engineering"
 	basic_modules = list(
@@ -433,7 +433,7 @@
 	moduleselect_icon = "engineer"
 	magpulsing = TRUE
 	hat_offset = -4
-
+*/
 /obj/item/robot_module/engineering/be_transformed_to(obj/item/robot_module/old_module)
 	var/mob/living/silicon/robot/R = loc
 	var/list/engymodels = list("Default", "Default - Treads", "Heavy", "Sleek", "Marina", "Can", "Spider", "Loader","Handy", "Pup Dozer", "Vale")
